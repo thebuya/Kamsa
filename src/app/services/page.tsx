@@ -41,7 +41,7 @@ const Services = ({selectedService, setSelectedService } : SearchServicesProps) 
 
               >
               <span className="block truncate article-text">
-                {selectedService ? selectedService : "All Services"}
+              {selectedService !== 'All Services' ? selectedService : 'All Services'}
                 </span>
 
                   <FontAwesomeIcon icon={faAngleDown} />
