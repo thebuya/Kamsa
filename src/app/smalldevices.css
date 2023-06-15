@@ -8,24 +8,36 @@
     .navbar ul  {
         flex-direction: column;
         align-items: baseline;
-        /* background: rgb(247 247 247); */
+         background: rgb(247 247 247); 
         border: 1px solid rgb(232 232 232);
         position: absolute;
-        top: 5rem;
+        
+
+        top: -10rem;
         right: 0;
-        /* z-index: 1; */
+        z-index: -1;
+        transition:   z-index 0.1s, top 500ms;
+
         border-radius: 0px 2px 2px 2px;
         padding: 0rem 0rem;
         height: 200px;
         width: 200px;
     } 
+   
     .navbar ul li{
         width: 100%;
     }
     .navbar .Link {
         padding: 0.25rem 1.25rem;
         font-size: 14px;
-        /* padding: 2px 0px 2px 6px; */
+        transition: all ease-in-out 300ms;
+    }
+    .navbar .Link:hover {
+        background: rgb(236 234 234);
+    }
+    .navbar .Link:active {
+        background: rgb(236 234 234);
+        color: var(--kamsa-color);
     }
     .onlyMobile{
         display: block;
@@ -34,29 +46,300 @@
         margin-left: 1rem;
         font-size: 1.25rem;
       }
+      .heading{
+        font-size: 32px;
+      }
+      
+
+
+
+
+
+      .services-section{
+        flex-direction: column;
+        margin-top: 1.5rem;
+      }
+      .services-section aside {
+        width: -webkit-fill-available;
+    }
+    .services-articles{
+        margin-top: 2rem;
+        display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    align-items: center;
+    width: -webkit-fill-available;
+    }
+    .article-text{
+        max-width: 600px;
+        font-size: 15px;
+    }
+.navbar ul.show{
+    top: 4.9rem;
+    z-index: 1;
+    transition:   z-index 0.6s ease-in 0.1s, top 500ms;
+  }
 
 }
-@media screen and (max-width: 550px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .upfooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+        .upfooter .links ul li a {
+            line-height: 140%;
+        }
+
+        .upfooter .links {
+            width: 100%;
+            justify-content: space-between;
+            }
+            footer .contacts{
+                width: 100%;
+              }
+              .upfooter .contacts ul{
+                justify-content: flex-start;
+                 }
+           
+                .upfooter .links ul {
+                    margin: 1.5rem 0;
+                }
+}
+@media screen and (max-width: 565px) {
     .smx-unseen{
         display: none;
-        
-    }.nav-menu{
- 
-        margin-left: 1rem;
-        font-size: 1rem;
-      }
-    
+    }
     .banner-contacts {
         width: -webkit-fill-available;
     }
     .header-link svg{
         margin-right: 0.5rem;
     }
+    .heading{
+        font-size: 30px;
+      }
+      .article-text{
+        font-size: 14px;
+    }
+    .custom-btn {
+        padding: 0.4rem 1.5rem;
+    }
+   
 }
+
+/*Davids In The Details*/
+@media screen and (max-width: 415px) {
+    .smx-unseenb{
+        display: none;
+        
+    }
+    .heading{
+        font-size: 27px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Davids In The Details*/
 @media screen and (max-width: 365px) {
     .smxx-unseen{
         display: none;
     }
+    .banner-contacts {
+        flex-direction: row-reverse;
+    }
+    .nav-menu{
+        font-size: 1rem;
+      }
+      
+      .heading{
+        font-size: 24px;
+      }
+      .sm-unseen.reappear{
+        display: block;
+      }
+    .upfooter .links ul li a {
+        line-height: 120%;
+    }
+    footer.kamsa-container{
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+      }
+      .upfooter .contacts ul{
+        justify-content: space-between;
+         }
+         .footnotes_container {
+            width: inherit;
+        }
+         .footnotes_container .Link{
+            font-size: 12px;
+        }
+        .article-text{
+            font-size: 13px;
+        }
+   
+
+      
+}
+
+/*Davids In The Details*/
+@media screen and (max-width: 306px) {
+    .header-link svg {
+        margin-right: 0rem; 
+    }
+    footer.kamsa-container{
+        align-items: center;
+      }
+      .upfooter .links {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .upfooter .links ul {
+        margin: 0.75rem 0;
+    }
+
+    
+
+}
+@media screen and (max-width: 289px) {
+      .sm-unseen.reappear{
+        display: none;
+      }
+}
+@media screen and (max-width: 250px) {
+    .navbar ul  {
+        width: -webkit-fill-available;
+    } 
+    .logo {
+        font-size: 0.9rem;
+        line-height: 120%;
+    }
+    .heading{
+        font-size: 21px;
+      }
+      .article-text{
+        font-size: 11px;
+    }
+
+}
+@media screen and (max-width: 200px) {
+    .banner svg{
+        display: none;
+    }
+    .heading{
+        font-size: 18px;
+      }
+      .article-text{
+        font-size: 11px;
+    }
+      
 }

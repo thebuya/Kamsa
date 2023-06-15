@@ -1,10 +1,10 @@
 "use client";
 
 import React, {useState, Fragment} from 'react';
-import { Listbox,   Transition  } from '@headlessui/react'
+import Image from 'next/image';
+import { Combobox,  Transition } from '@headlessui/react';
 import { services } from '../constants';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown} from '@fortawesome/free-solid-svg-icons';
+
 import { SearchServicesProps } from '../types';
 
 const Services = ({selectedService, setSelectedService } : SearchServicesProps) => {
@@ -12,11 +12,11 @@ const Services = ({selectedService, setSelectedService } : SearchServicesProps) 
 
   const filteredServices =
     query === ''
-    ? ['All Services', ...services]
-    : ['All Services', ...services.filter((service) => service.toLowerCase().includes(query.toLowerCase()))];
-    
-    
-    const showAllArticles = selectedService === 'All Services';
+      ? services
+      : services.filter((service) => {
+          return service.toLowerCase().includes(query.toLowerCase())
+        })
+
   return (
     <main className='kamsa-container '>
       <header>
@@ -32,25 +32,16 @@ const Services = ({selectedService, setSelectedService } : SearchServicesProps) 
       <section className="section-container services-section">
 
         <aside className='services-search'>
-            <Listbox value={selectedService} onChange={setSelectedService}>
+            <Combobox value={selectedService} onChange={setSelectedService}>
             <div className="relative w-full">
 
-              <Listbox.Button className="relative w-full py-2
-              pl-3 pr-10 text-left bg-white border border-gray-300
-               rounded-md shadow-sm focus:outline-none"
-
-              >
-              <span className="block truncate article-text">
-                {selectedService ? selectedService : "All Services"}
-                </span>
-
-                  <FontAwesomeIcon icon={faAngleDown} />
-
-
-              </Listbox.Button>
-
-
-                <Transition
+                    <Combobox.Input
+                        className="search-manufacturer__input"
+                        placeholder="Kitenge Design"
+                        displayValue={(selectedService: string)=>selectedService}
+                        onChange={(e) => setQuery(e.target.value)}
+                    />
+                    <Transition
                     as={Fragment}
                     leave="transition ease-in duration-100"
                     leaveFrom="opacity-100"
@@ -59,49 +50,50 @@ const Services = ({selectedService, setSelectedService } : SearchServicesProps) 
                     >
 
 
-                  <Listbox.Options className="absolute w-full py-1 mt-1 overflow-auto text-base
-                   bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black 
-                   ring-opacity-5  sm:text-sm custom-listbox-options">
-                    {filteredServices.length === 0 && query !== '' && (
-                      <Listbox.Option value={query} className="cursor-default 
-                      select-none">
-                        Create {query}
-                      </Listbox.Option>
-                    )}
-                    {filteredServices.map((item) => (
-                      <Listbox.Option
-                        key={item}
-                        value={item}
-                        className={({ active }) =>
-                        `relative py-2 pl-3 pr-9 ${
-                          active ? 'bg-primary-blue article-text active-red' : 'article-text active-red'
-                        } ${active ? 'focus:outline-none' : ''}`
-                      }
-                      >
-                        {({ selected, active }) => (
-                          <>
-                            <span
-                              className={`block truncate ${selected ? 'font-medium ' : 'font-normal Link'}`}
+                <Combobox.Options>
+                        {filteredServices.length === 0 && query !== "" && (
+                        <Combobox.Option
+                         value={query}
+                         className="search-manufacturer__option"
+                        >
+                            Create {query}  
+                        </Combobox.Option>
+                        )} : {
+                        filteredServices.map((item) => (
+                            <Combobox.Option
+                             key={item}
+                             className={({ active}) => `relative search-manufacturer__option 
+                               ${active ? 'bg-primary-blue text-white' 
+                               : 'text-gray-900'}
+                             `}
+                             value={item}
                             >
-                              {item}
-                            </span>
-                            {selected && (
-                              <span
-                                className={`absolute inset-y-0 right-0 flex items-center pr-2 ${
-                                  active ? 'active-red' : 'text-primary-blue'
-                                }`}
-                              >
-                              </span>
-                            )}
-                          </>
-                        )}
-                      </Listbox.Option>
-                    ))}
-                  </Listbox.Options>
-
+                                 {({ selected, active }) => (
+                                    <>
+                                     <span
+                          className={`block truncate ${
+                            selected ? 'font-medium' : 'font-normal'
+                          }`}
+                        >
+                          {item}
+                        </span>
+                        {selected ? (
+                          <span
+                            className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
+                              active ? 'text-white' : 'text-teal-600'
+                            }`}
+                          >
+                          </span>
+                        ) : null}
+                                    </>
+                                 )}
+                            </Combobox.Option>
+                        )
+                    )}
+                </Combobox.Options>
                 </Transition>
             </div>
-        </Listbox>
+        </Combobox>
         </aside>
 
         <section className='services-articles'>

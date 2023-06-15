@@ -7,3 +7,9 @@ export interface CustomButtonProps{
     btnType?: "button" | "submit" ;
     icon: string;
 }
+
+
+export interface SearchServicesProps{
+    selectedService: string;
+    setSelectedService: (selectedService: string) => void;
+}
