@@ -1,0 +1,62 @@
+@media screen and (max-width: 720px) {
+    .sm-unseen{
+        display: none;
+    }
+    .quote{
+        font-size: 12px;
+    }
+    .navbar ul  {
+        flex-direction: column;
+        align-items: baseline;
+        /* background: rgb(247 247 247); */
+        border: 1px solid rgb(232 232 232);
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        /* z-index: 1; */
+        border-radius: 0px 2px 2px 2px;
+        padding: 0rem 0rem;
+        height: 200px;
+        width: 200px;
+    } 
+    .navbar ul li{
+        width: 100%;
+    }
+    .navbar .Link {
+        padding: 0.25rem 1.25rem;
+        font-size: 14px;
+        /* padding: 2px 0px 2px 6px; */
+    }
+    .onlyMobile{
+        display: block;
+    }.nav-menu{
+ 
+        margin-left: 1rem;
+        font-size: 1.25rem;
+      }
+
+}
+@media screen and (max-width: 550px) {
+    .smx-unseen{
+        display: none;
+        
+    }.nav-menu{
+ 
+        margin-left: 1rem;
+        font-size: 1rem;
+      }
+    
+    .banner-contacts {
+        width: -webkit-fill-available;
+    }
+    .header-link svg{
+        margin-right: 0.5rem;
+    }
+}
+
+/*Davids In The Details*/
+@media screen and (max-width: 365px) {
+    .smxx-unseen{
+        display: none;
+    }
+}
