@@ -1,9 +1,10 @@
 
     export const services = [
         'Advisory Services and Policy Development',
-        'Training and Capacity Building:',
-        'Financial Planning and Management',
         'Grant Management and Capacity Building',
+        'Training and Capacity Building',
+        'Financial Planning and Management',
+        
 
       ];
   

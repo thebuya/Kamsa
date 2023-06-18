@@ -1,6 +1,17 @@
-import React from 'react'
+"use client";
+
+
+import React, {useEffect} from 'react'
 
 const  Blog = () => {
+  useEffect(() => {
+    const navBlogElement = document.getElementById('navBlog');
+    if (navBlogElement) {
+      navBlogElement.classList.add('active-link');
+    }
+  }, []);
+
+  
   return (
     <div className='kamsa-container '> 
       <h1 className="heading">

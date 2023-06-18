@@ -128,38 +128,7 @@ const Services = ({selectedService, setSelectedService } : SearchServicesProps) 
 
           </article>
 
-          <article className='service-article' id='service2'>
-            <h2 className="paragraph-header">
-            Grant Management and Capacity Building:
-            </h2>
-            <p className='article-text'>
-                    We pride in working with entities to ensure
-                    that we contribute to creating the positive 
-                    impact/change that our clients strive to create 
-                    in the communities they serve to improve their 
-                    quality of life, and ensure a more self-reliant 
-                    and sustainable future. 
-            </p>
-            <br />
-              <ul className='article-text'>
-                    <li>
-                    Building capacity of NGOs/CSOs/CBOs to continuously win grants.
-                    </li>
-                    <li>
-                    Documenting internal Financial Controls (IFCs) 
-                    for NGOs/CSOs/CBOs to strengthen processes and drive growth.        
-                    </li>
-                    <li>
-                    Developing and documenting Standard Operating Procedures 
-                    (SOPs), Manuals, Policies, and best practices in grants management.
-                    </li>
-                    <li>
-                    Conducting hands-on basic financial and grants management flagship training.
-                    </li>
-              </ul>
-            
-
-          </article>
+        
         </section>
 
       </section>

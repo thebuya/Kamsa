@@ -2,6 +2,16 @@
     .article-text{
         font-size: 16px;
     }
+    .whitebutton {
+        min-width: 250px;
+    }
+    .view1000{
+        display:none;
+    }
+    .kamsa-container .contentSection {
+        padding-top: 5rem;
+    }
+    
     .paragraph-header{
         font-weight: 700;
         font-size: 18px;
@@ -50,6 +60,17 @@
         font-size: 45px;
         line-height: 160%;
       }
+      .whitebutton {
+        min-width: 500px;
+    }
+      .extra-heading{
+  
+        font-size: 80px;
+        padding: 0rem 4rem 5rem 4rem;
+    }
+    section .contentSection .numbered-title .numbered-title-size{
+        font-size: 21px;
+    }
       .quote{
         font-size: 14px;
         }
@@ -88,6 +109,26 @@
             margin: 0px 6px 0px 6px;
         }
 
+
+
+
+        .contentSection .articles-text{
+            max-width: 600px;
+        }
+        .contentSection .numbered-title{
+            padding-bottom: 1rem;
+        }
+        .article-text{
+            font-size: 18px;
+            max-width: 670px;
+        }
+        .contentSection .darkCards .darkcard {
+            padding: 0.75rem 1rem;
+            width: 350px;
+        
+        }
+        
+
         
 }
 @media screen and (min-width: 1500px) {
@@ -95,7 +136,8 @@
         width: 50%;
     }
     .article-text{
-        font-size: 16px;
+        font-size: 20px;
+        max-width: 720px;
     }
     .logo{
         font-size: 1.125rem;
@@ -121,17 +163,39 @@
         .upfooter {
             justify-content: space-around;
         }
+        .contentSection .articles-text{
+            max-width: 850px;
+        }
+        .contentSection .numbered-title{
+            padding-bottom: 1.5rem;
+        }
+        .extra-heading {
+            font-size: 100px;
+        }
+        .contentSection .darkCards .darkcard {
+            padding: 0.75rem 1rem;
+            width: 400px;
+        }
 }
 @media screen and (min-width: 1800px) {
     .services-section{
         justify-content: space-around;
       }
+      .extra-heading {
+        font-size: 130px;
+    }
+      section .contentSection .numbered-title .numbered-title-size{
+        font-size: 24px;
+    }
       .services-section aside {
         width: 70%;
     }
     .article-text{
-        max-width: 90%;
-        font-size: 20px;
+        max-width: 90%; /*Services*/
+        font-size: 21px;
+    }
+    .contentSection .article-text {
+        max-width: 950px;
     }
     .heading{
         font-size: 48px;
@@ -148,6 +212,14 @@
     .header-link {
         font-size: 16px;
         margin: 0px 6px 0px 6px;
+    }
+
+    .contentSection .articles-text{
+        max-width: 1000px;
+    }
+    .extra-heading {
+        /*padding: 5rem 7rem;*/
+        padding: 2rem 7rem 5rem 7rem;
     }
 }
 
@@ -172,6 +244,7 @@
         }
         .custom-btn {
             font-size: 1.125rem;
+            font-weight: 500;
 }
         
 }

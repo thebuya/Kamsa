@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faArrowRight, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
@@ -31,7 +31,9 @@ const Footer = () => {
                   <ul>
                     <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"
                            aria-label="Vist Kamsa Consultants on LinkedIn.">
+                          
                             <FontAwesomeIcon icon={faLinkedin} />
+                            
                         </a>
                     </li>
                     <li><a href="https://twitter.com" target="_blank" rel="noreferrer"
@@ -56,8 +58,9 @@ const Footer = () => {
                     </li>
                   </ul>
 
-                  <p className="address Link"> Wakiso, Kampala, (U). <br />
-                  Arua-Nebbi road, Arua City
+                  <p className="address Link"> 
+                      <FontAwesomeIcon icon={faCaretRight  } />{"  "}Wakiso, Kampala, (U). <br />
+                      <FontAwesomeIcon icon={faCaretRight  } />{"  "}Arua-Nebbi road, Arua City
                    </p>
                   
 
@@ -68,7 +71,7 @@ const Footer = () => {
                   <h4> Company </h4>
                     <li><Link className='Link' href={"/about"}>About us</Link></li>
                     <li><Link className='Link' href={"/listofteam"}>The Team</Link></li>
-                    <li><Link className='Link' href={"/about/founder"}>Our Clients</Link></li>
+                    <li><Link className='Link ' href={"/about/founder"}>Our Clients</Link></li>
                     <li><Link className='Link' href={"/blog"}>Registration Status</Link></li>
                   </ul>
 
@@ -76,7 +79,8 @@ const Footer = () => {
                   <h4> Resources </h4>
                     <li><Link className='Link' href={"/blog"}>Blogs</Link></li>
                     <li><Link className='Link' href={"/services"}>Services</Link></li>
-                    <li><Link className='Link no-content' href={""}>Job Opportunities</Link></li>
+                    <li><Link className='Link no-content' href={"/services"}>Contact Us <FontAwesomeIcon icon={faArrowRight } /></Link></li>
+                    <li><Link className='Link no-content' href={""}>Frequently Asked Questions</Link></li>
                     <li><Link className='Link no-content' href={""}>Upcoming Events </Link></li>
                   </ul>
               </div>
