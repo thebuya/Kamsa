@@ -5,10 +5,13 @@ import CustomButton from '../components/CustomButton'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEye, faArrowCircleUp, faAsterisk} from '@fortawesome/free-solid-svg-icons';
+import { faEye, faArrowCircleUp, faAsterisk, faUserPlus, faUsers} from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
 const About= () => {
+  
+
+
   return (
     <div className='kamsa-container about-container'>
       <header>
@@ -150,16 +153,45 @@ const About= () => {
         </section>
 
         <div className="coverfloat">
-        <div className="floatingdiv">
-                        <h3 className='article-text'>
-                          <FontAwesomeIcon className='mr-4 rotate-45' icon={faArrowCircleUp}/>
-                           
-                           Our Core Values</h3>
+        <div className="floatingdiv corediv">
+        <h3 className='article-text'>
+        <FontAwesomeIcon className='mr-4 rotate-45' icon={faArrowCircleUp}/>                          
+            Our Core Values
+        </h3>
+
+
+           
+            <div className="marquee values">
+                <div className="marquee--inner">
+                  <span>
+                  <p className="orb">ACCOUNTABILITY</p>
+                    <p className="orb red">INTEGRITY</p>
+                    <p className="orb yellow">INNOVATION </p>
+                    <p className="orb blue">PROFESSIONALISM</p>
+                    <p className="orb orange">TRANSPARENCY</p>
+                    <p className="orb purple">RELIABILITY</p>
+                    <p className="orb green">EFFICIENCY</p>
+                  </span>
+                  <span>
+                    <p className="orb">ACCOUNTABILITY</p>
+                    <p className="orb red">INTEGRITY</p>
+                    <p className="orb yellow">INNOVATION </p>
+                    <p className="orb blue">PROFESSIONALISM</p>
+                    <p className="orb orange">TRANSPARENCY</p>
+                    <p className="orb purple">RELIABILITY</p>
+                    <p className="orb green">EFFICIENCY</p>
+                  </span>
+
+                </div>
+            </div>
          </div>
+
+
+
 
         </div>
 
-        <section className='darkbg firstSection whiteSection pt-8'>
+        <section className=' firstSection whiteSection pt-8 strategy-container'>
           <div className="contentSection flex-col">
 
                 <header className="contentheader">
@@ -169,25 +201,77 @@ const About= () => {
                       KCL STRATEGY
                         </span> 
                     </h2>
-
-                    <h3 className="lg-subheader">
-                    Focuses on efficient utilization 
-                    <span className='highlight'>{" "}of clients’ resources</span> 
-                    {" "}and effectiveness 
-                    <span className='highlight'>{" "}in meeting clients’ expectations</span> 
-                    <span className="active-red">.</span>
-                    </h3>
-                </header>
-
-                <article className="contentContainer">
-                
-                  <p className="article-text text-on-gray aboutus-text pt-4 lh">
+                    <p className="article-text text-on-gray aboutus-text pt-4 lh">
                       KCL seeks to preserve five (5) core operational 
                       objectives in her day-to-day business which are a 
                       trigger to exceptional service delivery to our clients 
-                      and partners. These include; Cost/efficiency, quality, 
-                      timeliness/speed, flexibility and dependability.
-                  </p>
+                      and partners. These include:
+                   </p>
+    
+                </header>
+
+                <article className="contentContainer">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 strategy-list">
+                    <li className="flex flex-row strategy">
+                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <div className='flex flex-col'>
+                      <h4  className="  article-text  active-red">Cost / Efficiency</h4>
+                      <p className="article-text"> 
+                        We consistently review our cost strategies to 
+                        produce the product/service at the best lowest 
+                        and affordable cost. </p>
+                    </div>
+                    </li>
+                    <li className="flex flex-row strategy">
+                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <div className='flex flex-col'>
+                      <h4  className="  article-text  active-red">Flexibility</h4>
+                      <p className="article-text">
+                      This is because we understand customers have different 
+                      tastes and preference. We listen to our customers 
+                      feedback and provide services that meet expectations.  </p>
+                    </div>
+                    </li>
+                    <li className="flex flex-row strategy">
+                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <div className='flex flex-col'>
+                      <h4  className="  article-text  active-red">Speed / Timeliness</h4>
+                      <p className="article-text">
+                      Speed is priority as we serve our customers. 
+                      We deliver our services/products at the right time 
+                      they are needed and as per the terms of engagement. </p>
+                    </div>
+                    </li>
+                    <li className="flex flex-row strategy">
+                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <div className='flex flex-col'>
+                      <h4  className="  article-text  active-red">Quality</h4>
+                      <p className="article-text">We emphasize on conformity with the service 
+                      standards when executing customer and partner 
+                      engagements. </p>
+                    </div>
+                    </li>
+                    <li className="flex flex-row strategy">
+                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <div className='flex flex-col'>
+                      <h4  className="  article-text  active-red">Dependability</h4>
+                      <p className="article-text">
+                      KCL boasts of living to its promises to customers and partners. 
+                      Our loyal customers are the channel of communication to the 
+                      community we serve because of our dependable service approaches.</p>
+                    </div>
+                    </li>
+                  </ul>
+
+                <h3 className="lg-subheader">
+                    ...Focuses on efficient utilization 
+                    <span className='highlight'>{" "}of clients’ resources</span> 
+                    {" "}and effectiveness 
+                    <span className='highlight'>{" "}in meeting clients’ expectations..</span> 
+                    <span className="active-red">.</span>
+                    </h3>
+                
+                  
 
                 </article>
 
@@ -239,6 +323,172 @@ const About= () => {
               </div>
 
               
+        </section>
+
+
+        <section className='darkbg firstSection whiteSection Experience'>
+          <div className="contentSection">
+
+                <header className="contentheader">
+                    <h2 className="numbered-title text-primary view1000">
+                      04<span className="numbered-title-size ">
+                            <span className="text-primary">/{" "}</span>
+                          OUR EXPERIENCE
+                        </span> 
+                    </h2>
+
+                    <div className='flex flex-col infographs'>
+                        <div className=' flex flex-col'>
+                        <h3 className="lg-subheader ">
+                          13<FontAwesomeIcon className='ml-4' icon={faAsterisk} />
+                        </h3>
+                        <p className="article-text ">
+                            Combined Years <br /> of Experience
+                        </p>
+                      </div>
+                        
+                          
+                        <div className=' flex flex-col'>
+                          <h3 className="lg-subheader">
+                          10<FontAwesomeIcon className='ml-4' icon={faUserPlus}/>
+                          </h3>
+                          <p className="article-text ">
+                            Client Projects
+                          </p>
+                        </div>
+                    </div >
+                  
+                    
+                      
+
+                    
+                </header>
+
+                <article className="contentContainer">
+                  <h2 className="numbered-title text-primary none1000">
+                      04<span className="numbered-title-size ">
+                            <span className="text-primary">/{" "}</span>
+                          OUR EXPERIENCE
+                        </span> 
+                    </h2>
+                  <p className="article-text text-on-gray aboutus-text lh">
+                      We have been tested and proven excellent by our customers. 
+                      We continue to provide up-to-date, quality, flexible and 
+                      dependable services to satisfy, retain and sustain our customers. 
+                      
+                      We listen and take seriously customer feedback for continuous 
+                      improvement. We exist because we give our customers priority in 
+                      everything we do. The team of KCL delivers exceptional professional 
+                      services and have over 13 years working experience nationally and 
+                      internationally in zone/areas of Capacity building for Private and 
+                      public institutions in Grants/Project management, Budgeting, 
+                      financial management, proposal writing/resources mobilization, 
+                      sustainability planning and reporting, documentation of best 
+                      practices, policies and procedures, flagship grants and financial 
+                      management trainings etc.
+                  </p>
+
+                  <CustomButton
+                    title='Book a consultation'
+                    btnType='button'
+                    containerStyles='rounded-full bg-white min-w-[150px] whitebutton borderRed'
+                    icon={''}
+                  />
+                </article>
+
+          </div>
+        </section>
+
+
+        <section className="darkbg secondSection Team Clients">
+
+<div className="contentSection flex-col">
+
+      <header className="contentheader">
+         
+
+          <h3 className="lg-subheader ">
+          Meet <span className='text-white'>The Team</span>
+          </h3>
+      </header>
+
+      <article className="contentContainer">
+          
+
+          <div className="darkCards">
+
+          <div className="darkcard dC1 bm">
+            <FontAwesomeIcon className='teamicon' icon={faLinkedin}/>
+             
+             
+
+            <p className="article-text">
+             Mrs. Patience Ozokwor
+            </p>
+          </div>
+
+          <div className="darkcard dC2 bm">
+           
+            <FontAwesomeIcon className='teamicon' icon={faLinkedin}/>
+            
+
+            <p className="article-text">
+            Mr. Hillary Bukunda
+            </p>
+          </div>
+          </div>
+
+          
+
+      </article>
+
+</div>
+
+
+        </section>
+
+        <div className="coverfloat">
+        <div className="floatingdiv">
+            <h3 className='article-text'>
+              <FontAwesomeIcon className='mr-4' icon={faUsers}/>            
+              Our Clients
+            </h3>
+
+            <div className="logos">
+             
+            </div>
+         </div>
+
+        </div>
+
+
+        <section className='darkbg firstSection whiteSection pt-8'>
+          <div className="contentSection flex-col">
+
+                <header className="contentheader">
+                    <h2 className="numbered-title text-primary">
+                      Stay Informed To Stay Ahead.
+                    </h2>
+                </header>
+
+                <article className="contentContainer">
+
+                    <h3 className="lg-subheader">
+                        Get Financial Insights and Tips
+                    </h3>
+
+                    
+                    <form className="newsletter-form">
+                      <input type="email" name="email" placeholder="Enter your email ...." required />
+                      <button type="submit" className="rounded-full bg-white min-w-[150px] whitebutton">
+                        Stay Updated
+                      </button>
+                    </form> 
+                  
+
+                </article>
+
+          </div>
         </section>
 
         

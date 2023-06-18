@@ -53,12 +53,13 @@ const Navbar = () => {
 
         <nav className="navbar w-full">
             
-        <Link href={"/"} onClick={() => {
+        <Link href={"/"} className='logo' onClick={() => {
             setIsNavShowing(false);
             handleNavLinkClick();
-          }}><p className='logo'>Kamsa <span className='thin-gray'>Consultants</span></p></Link>
+          }}>Kamsa <span className='thin-gray'>Consultants</span>
+          </Link>
 
-<div className='flex'>
+        <div className='flex'>
           <ul className={`flex ${isNavShowing ? 'show' : ''}`}>
             <li className='Link'>
               <Link

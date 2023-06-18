@@ -159,6 +159,8 @@ font-weight: 700;
 .floatingdiv{
     margin-top: -2rem;
     display: flex;
+    width: 80%;
+    flex-direction: column;
     height: 200px;
     background: var(--kamsa-white);
     box-shadow: 0px 5px 51px rgba(51, 51, 51, 0.12);
@@ -171,11 +173,106 @@ font-weight: 700;
     box-shadow: none;
     border-radius: 0px;
 }
+
+.corediv:hover .marquee--inner{
+    overflow-x: scroll; /* Enable horizontal scrolling */
+}
 .floatingdiv h3{
+    
     color: var(--kamsa-color);
     width: -webkit-fill-available;
     padding: 1rem 1rem 0.5rem 1rem;
 }
+
+.orb {
+    display: inline-block;
+    margin: 0 1rem;
+    /*float: left;*/
+    transition: all .2s ease-out;
+  }
+  
+  .orb:hover {
+    transform: scale(0.9);
+    opacity: .5;
+    cursor: pointer;
+  }
+  
+  
+  .marquee {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .marquee--inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+    height: 100%;
+    /* margin: 70px 0; */
+    position: absolute;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track); /* Set the scrollbar color */
+    animation: marquee 20s linear infinite;
+}
+.marquee--inner::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as desired */
+  }
+  
+  .marquee--inner::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb); /* Set the scrollbar thumb color */
+  }
+  .marquee--inner:hover {
+    animation-play-state: paused;
+  }
+  
+  /*.half {
+    float: left;
+    width: 10%;
+  }*/
+  
+ .floatingdiv span {
+    float: left;
+    width: 50%;
+    display: contents;
+  }
+ .floatingdiv span p{
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,11 +283,11 @@ font-weight: 700;
 .kamsa-container .whiteSection .lg-subheader{
     max-width: 1000px;
 }
-.kamsa-container .whiteSection .pt-4.lh{
-    
+.kamsa-container .whiteSection .lh{ 
         color: var(--kamsa-dark);
-        line-height: 160%;
-    
+}
+.kamsa-container .whiteSection .pt-4.lh{ 
+        line-height: 160%; 
 }
 .kamsa-container .whiteSection.pt-8 .contentheader{
     
@@ -201,13 +298,78 @@ font-weight: 700;
 
 
 
+
+
+
+.kamsa-container .whiteSection .strategy-list {
+    margin: 3rem 0rem 4rem 0rem;
+    width: 100%;
+    
+}
+.kamsa-container .whiteSection .strategy-list .active-red{
+    text-align: left;
+    width: 100%; /*webkit available is it*/
+    font-weight: 700;
+}
+.kamsa-container .whiteSection .strategy-list li{
+    align-items: flex-start;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+    box-shadow: -3px 3px 6px rgba(51, 51, 51, 0.1);
+    margin: 1rem;
+}
+.kamsa-container .whiteSection .strategy-list li:hover{
+    box-shadow: none;
+    border: 1px solid var(--kamsa-lightgray);
+
+}
+.kamsa-container .whiteSection .strategy-list li p{
+    line-height: 140%;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+.kamsa-container .strategy-container .lg-subheader {
+    max-width: fit-content;
+    text-align: center;
+}
+
+.kamsa-container .whiteSection .strategy svg{
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 .Team .contentSection .darkCards .darkcard{
     padding: 0;
     align-items: flex-end;
+    width: 250px;
+    height: 200px;
+    justify-content: space-between;
+
 }
+.Team .contentContainer p {
+    padding-bottom: 0.5rem;
+    text-align: -webkit-center;
+    width: 100%;
+    }
 .Team .darkcard svg{
     font-size: 3rem;
     border-radius: 0;
+}
+.Team .contentSection .bm{
+width: 100%;
+text-align: center;
+padding-bottom: 0.5rem;
 }
 .Team .contentSection .bm:hover{
     border:none ;
@@ -216,3 +378,17 @@ font-weight: 700;
 .teamicon{
     color:var(--kamsa-white)
 }
+
+
+
+
+/**/
+.whitebutton.borderRed:hover {
+    border: 0.2px solid var(--kamsa-color);
+  }
+  .whitebutton.borderRed:active {
+    border: none;
+  }
+/**/
+
+
