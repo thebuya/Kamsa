@@ -100,7 +100,7 @@ const Navbar = () => {
                   setIsNavShowing((prev) => !prev);
                   handleNavLinkClick();
                 }}
-                href={'/listofteam'}
+                href={'/'}
               >
                 Our Team
               </Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
                   setIsNavShowing((prev) => !prev);
                   handleNavLinkClick();
                 }}
-                href={'/blog'}
+                href={'/'}
               >
                 Blog
               </Link>

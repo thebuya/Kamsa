@@ -39,6 +39,7 @@
     .contentSection .contentContainer a,
     .contentSection .whitebutton {
         width: -webkit-fill-available;
+        font-weight: 700;
         }
         .about-container .floatingdiv {
             height: 150px;
@@ -186,6 +187,7 @@
       }
       .heading{
         font-size: 32px;
+        padding-top: 1rem;
       }
       
 
@@ -247,6 +249,12 @@
 @media screen and (max-width: 612px) {
     .smx-unseen{
         display: none;
+    }
+    .banner-contacts {
+        width: -webkit-fill-available;
+    }
+    .Team.Clients .contentSection .darkCards .darkcard {
+        width: 500px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -341,9 +349,7 @@
     height: 25px;
 }
        
-    .banner-contacts {
-        width: -webkit-fill-available;
-    }
+ 
     .header-link svg{
         margin-right: 0.5rem;
     }
@@ -351,7 +357,7 @@
         font-size: 30px;
       }
       .article-text{
-        font-size: 15.5px;
+        font-size: 14.5px;
         line-height: 180%;
     }
     .custom-btn {
@@ -457,7 +463,7 @@
             font-size: 12px;
         }
         .article-text{
-            font-size: 14.5px;
+            font-size: 13.5px;
         }
         .contentSection .lg-subheader{
             font-size: 25px;

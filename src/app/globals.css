@@ -486,3 +486,33 @@ footer h4 {
   color: var(--kamsa-dark);
   font-weight: 500;
 }
+
+
+
+.template-container.kamsa-container h1{
+  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+    text-align: center;
+}
+.template-container.kamsa-container p{
+  margin-bottom: 0.25rem;
+    text-align: center;
+}
+.template-container.kamsa-container ul{
+  flex-direction: row;
+  display: flex;
+}
+.template-container.kamsa-container ul li a{
+  margin: 0 1rem;
+  font-size: 1rem;
+
+  transition: all ease-in-out 300ms;
+}
+.template-container.kamsa-container ul li a:hover{
+  font-size: 0.87rem;
+  color: var(--kamsa-color);
+}
+.template-container.kamsa-container {
+justify-content: center;
+height: 60vh;
+}
