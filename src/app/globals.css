@@ -92,11 +92,9 @@ p {
   padding: 0rem 0rem 1rem 0rem;
 }
 .extra-heading{
-  
   font-size: 66px;
   padding: 2.5rem 4rem 3rem 4rem;
 }
-
 .lg-subheader{
   font-weight: 700;
   font-size: 42px;
@@ -105,7 +103,6 @@ p {
 .highlight {
   color: var(--kamsa-lightgray);
 }
-
 .article-text {
   max-width: 600px;
   font-weight: 400;
@@ -113,7 +110,6 @@ p {
   line-height: 180%;
   color: var(--kamsa-gray);
 }
-
 .paragraph-header {
   font-weight: 700;
   font-size: 18px;
@@ -121,12 +117,13 @@ p {
   color: var(--kamsa-color);
   margin-bottom: 0.5rem;
 }
-
 .service-article ul {
   list-style: inside;
 }
-
 /*FONTS*/
+
+
+
 .services-section {
   display: flex;
   flex-direction: row;
@@ -134,19 +131,16 @@ p {
   align-items: baseline;
   margin-top: 1.5rem;
 }
-
 .services-section aside {
   width: 300px;
   margin: 1rem 0rem;
 }
-
 .services-search button {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
 }
-
 .services-search .font-normal {
   cursor: pointer;
   color: var(--kamsa-gray);
@@ -418,6 +412,9 @@ footer.kamsa-container {
   line-height: 180%;
   font-weight: 400;
   color: var(--kamsa-gray);
+}
+.upfooter .links ul li a:hover {
+  color: var(--kamsa-color);
 }
 .upfooter .links ul li .Link.no-content {
   color: var(--kamsa-lightgray);

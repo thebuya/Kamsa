@@ -6,6 +6,7 @@ export interface CustomButtonProps{
     handleClick?: MouseEventHandler<HTMLButtonElement>;
     btnType?: "button" | "submit" ;
     icon: string;
+    onClick?: () => void; // Add the onClick property
 }
 
 

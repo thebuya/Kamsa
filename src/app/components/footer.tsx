@@ -70,18 +70,17 @@ const Footer = () => {
                 <ul>
                   <h4> Company </h4>
                     <li><Link className='Link' href={"/about"}>About us</Link></li>
-                    <li><Link className='Link' href={"/listofteam"}>The Team</Link></li>
-                    <li><Link className='Link ' href={"/about/founder"}>Our Clients</Link></li>
-                    <li><Link className='Link' href={"/blog"}>Registration Status</Link></li>
+                    <li><Link className='Link' href={"/about#listofteam"}>The Team</Link></li>
+                    <li><Link className='Link ' href={"/about#Clients"}>Our Clients</Link></li>
+                    <li><Link className='Link' href={"/https://opencorporates.com/companies/ug/80020002221215"}>Registration Status</Link></li>
                   </ul>
 
                   <ul>
                   <h4> Resources </h4>
-                    <li><Link className='Link' href={"/blog"}>Blogs</Link></li>
+                    <li><Link className='Link ' href={"/blog"}>Blogs</Link></li>
                     <li><Link className='Link' href={"/services"}>Services</Link></li>
-                    <li><Link className='Link no-content' href={"/services"}>Contact Us <FontAwesomeIcon icon={faArrowRight } /></Link></li>
-                    <li><Link className='Link no-content' href={""}>Frequently Asked Questions</Link></li>
-                    <li><Link className='Link no-content' href={""}>Upcoming Events </Link></li>
+                    <li><Link className='Link no-content' href={"/chatbot"}>ChatBot</Link></li>
+                    <li><Link className='Link no-content' href={"/"}>Upcoming Events </Link></li>
                   </ul>
               </div>
       </div>

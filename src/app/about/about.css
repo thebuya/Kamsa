@@ -318,6 +318,7 @@ font-weight: 700;
     transition: all ease-in-out 300ms;
     box-shadow: -3px 3px 6px rgba(51, 51, 51, 0.1);
     margin: 1rem;
+    border: 1px solid #efecec;
 }
 .kamsa-container .whiteSection .strategy-list li:hover{
     box-shadow: none;
@@ -349,6 +350,22 @@ font-weight: 700;
 
 
 
+.Team .contentSection .darkCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: -webkit-fill-available;
+}
+
+.Team .contentContainer {
+    align-items: center;
+}
+.Team .contentSection .darkCards .e-team h5{
+    color: var(--kamsa-bg);
+    font-size: 90%;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    mix-blend-mode: unset;
+}
 .Team .contentSection .darkCards .darkcard{
     padding: 0;
     align-items: flex-end;
@@ -386,9 +403,125 @@ padding-bottom: 0.5rem;
 .whitebutton.borderRed:hover {
     border: 0.2px solid var(--kamsa-color);
   }
-  .whitebutton.borderRed:active {
+.whitebutton.borderRed:active {
     border: none;
-  }
+}
 /**/
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*Experience*/
+.Experience .contentSection .infographs .lg-subheader {
+    font-size: 4rem;
+    color: var(--kamsa-darkestbg);
+}
+.Experience .contentSection .infographs p {
+    font-size: 80%;
+    line-height: 120%;
+    text-align: center;
+    color: var(--kamsa-dark);
+}
+.Experience .contentSection .infographs div p br {
+   display: block;
+}
+.Experience .contentSection .infographs div {
+   margin: 0 3rem;
+}
+.Experience .contentSection .infographs  {
+   width: 100%;
+}
+/*Experience*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*NewLetter*/
+.newsletter-form{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+width: 100%;
+
+}
+.newsletter-form input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 44px;
+    
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.29);
+    border-radius: 6px 0px 0px 6px;
+}
+/* Styles for the input when typing */
+.newsletter-form input:focus {
+    outline: none;
+    border: 1px solid var(--kamsa-dark);
+  }
+  /* Styles for the input when it's valid */
+ .newsletter-form  input:valid {
+    border: 1px solid green;
+    box-shadow: none
+  }
+  /* Styles for the input when it's invalid */
+ .newsletter-form  input:invalid {
+    color: var(--kamsa-dark);
+  }
+.newsletter-form button{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0.5rem 1.25rem;
+
+width: auto;
+height: 44px;
+
+background: #1B1B1B;
+color: var(--kamsa-text-on-dark);
+font-size: 1rem;
+
+box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.36);
+border-radius: 0px 10px 10px 0px;
+transition: all ease-in-out 300ms;
+}
+.newsletter-form button:hover{
+    box-shadow:none;
+    color: var(--kamsa-white);
+}
+.kamsa-container .NewsLetter .newshead{
+    max-width: inherit;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.kamsa-container .NewsLetter h3.lg-subheader{
+    font-size: 2rem;
+}
+.kamsa-container .NewsLetter .contentSection header.contentheader {
+ 
+    visibility: hidden;
+}
+/*NewLetter*/

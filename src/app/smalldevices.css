@@ -5,10 +5,25 @@
         flex-direction: column;
         justify-content: center;
     }
+    .kamsa-container .NewsLetter .contentSection header.contentheader {
+        margin-top: 0;
+        visibility: hidden;
+   }
     .about-container .floatingdiv span p {
         font-size: 2rem;
         font-weight: 800;
         }
+        .Team .contentSection ul.darkCards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: -webkit-fill-available;
+        }
+        .kamsa-container .NewsLetter .contentSection h3.lg-subheader{
+            font-size: 1.5rem;
+    }
+        .Team .contentSection .darkCards li{
+            margin: 2rem;
+         }
   
     .none1000{
         display:none;
@@ -35,7 +50,16 @@
             padding-bottom: 0;
         }
         .Experience .contentheader div.infographs{
-            flex-direction: row;
+           
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .Experience .contentheader div.infographs svg{
+            font-size: 3rem;
+            color: var(--kamsa-dark);
+        }
+        .Experience .contentSection .contentheader {
+            width: 100%;
         }
 
 }
@@ -44,6 +68,22 @@
     .contentSection .lg-subheader {
         font-size: 32px;
     }
+    .Team .contentSection .darkCards li{
+        margin: 1rem 1rem;
+     }
+     .Experience .contentheader div.infographs{
+        flex-direction: column-reverse;
+
+    }
+     .Experience .contentSection .contentheader .infographs .lg-subheader {
+        font-size: 3rem;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+     .Team .darkCards{
+        padding-top: 0;
+     }
     .about-container .floatingdiv {
         height: 120px;
         }
@@ -67,10 +107,13 @@
         margin: 0;
     }
     .secondSection .darkCards .darkcard.dC1{
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
     .secondSection .darkCards .darkcard.dC2{
-        margin-top: 1rem;
+        margin-top: 0rem;
+    }
+    .secondSection .darkCards .e-team{
+        margin: 1rem 1rem;
     }
     .extra-heading{
         font-size: 60px;
@@ -159,44 +202,12 @@
     z-index: 1;
     transition:   z-index 0.6s ease-in 0.1s, top 500ms;
   }
-
+  .contentSection header {
+    text-align: center;
+    padding: 1rem 0 1.5rem 0rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -231,6 +242,11 @@
             text-align: center;
             padding: 2rem 0 1rem;
         }
+        .Team .contentSection ul.darkCards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: -webkit-fill-available;
+        }
 
         .upfooter .links {
             width: 100%;
@@ -250,17 +266,32 @@
                     font-size: 55px;
                     padding: 2rem 2rem 3rem 2rem;
                 }
-}
+              
+            }
 @media screen and (max-width: 565px) {
     .smx-unseen{
         display: none;
     }
+    .kamsa-container .NewsLetter .contentSection header.contentheader {
+        margin-top: 0;
+   }
+    .kamsa-container .NewsLetter .contentSection form.newsletter-form {
+        flex-direction: column;
+   }
+    .kamsa-container .NewsLetter .contentSection form.newsletter-form input {
+        width: 100%;
+   }
+    .kamsa-container .NewsLetter .contentSection form.newsletter-form button{
+        width: 100%;
+        margin-top: 1rem;
+        border-radius:3px;
+   }
     .about-container .floatingdiv span p {
         font-size: 1.5rem;
         font-weight: 800;
         }
         .about-container .floatingdiv {
-            height: 100px;
+            height: 120px;
             }
            .floatingdiv .marquee--inner {
                 display: flex;
@@ -275,7 +306,7 @@
                 animation: marquee 7s linear infinite;
             }
             .about-container .whiteSection.pt-8 .contentSection .contentheader {
-                margin-top: 2.5rem;
+                margin-top: 5rem;
             }
             .kamsa-container .whiteSection .contentSection .pt-4.lh {
                 text-align: center;
@@ -285,7 +316,7 @@
             }
 
 .kamsa-container  .strategy-container .contentContainer .strategy-list {
-    margin: 3rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
     
 }
 .kamsa-container .whiteSection .strategy-list .strategy svg{
@@ -367,34 +398,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Davids In The Details*/
 @media screen and (max-width: 365px) {
     .smxx-unseen{
@@ -445,7 +448,6 @@
 
       
 }
-
 /*Davids In The Details*/
 @media screen and (max-width: 328px) {
     .contentSection .lg-subheader{

@@ -6,6 +6,8 @@ import './smalldevices.css';
 import { Inter } from 'next/font/google'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
+import WhatsAppButton from './components/WhatsappButton';
+import BackToTopButton from './components/BackToTop';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,6 +32,8 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
+        <WhatsAppButton/>
+        <BackToTopButton/>
       </body>
     </html>
   )

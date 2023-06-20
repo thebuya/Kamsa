@@ -61,7 +61,7 @@ const Navbar = () => {
 
         <div className='flex'>
           <ul className={`flex ${isNavShowing ? 'show' : ''}`}>
-            <li className='Link'>
+            <li className='Link no-content'>
               <Link
                 onClick={() => {
                   setIsNavShowing((prev) => !prev);
@@ -94,7 +94,7 @@ const Navbar = () => {
                 Our Services
               </Link>
             </li>
-            <li className='Link'>
+            <li className='Link no-content'>
               <Link
                 onClick={() => {
                   setIsNavShowing((prev) => !prev);
@@ -105,7 +105,7 @@ const Navbar = () => {
                 Our Team
               </Link>
             </li>
-            <li className='Link' id='navBlog'>
+            <li className='Link no-content' id='navBlog'>
               <Link
                 onClick={() => {
                   setIsNavShowing((prev) => !prev);

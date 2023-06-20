@@ -2,6 +2,9 @@
     .article-text{
         font-size: 16px;
     }
+    .newsletter-form input{
+        width: 30%;
+    }
     .whitebutton {
         min-width: 250px;
     }
@@ -108,6 +111,9 @@
             font-size: 13px;
             margin: 0px 6px 0px 6px;
         }
+        .kamsa-container .NewsLetter .contentSection h3.lg-subheader{
+            font-size: 2.5rem;
+    }
 
 
 

@@ -1,12 +1,15 @@
 import React from 'react'
 import './about.css';
+
+import Link from 'next/link';
 import TrendUp from '../../../public/images/trending-up.svg'
 import CustomButton from '../components/CustomButton'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faInstagram, faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEye, faArrowCircleUp, faAsterisk, faUserPlus, faUsers} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faEye, faArrowCircleUp, faAsterisk, faUserPlus, faUsers, faUsd, faBolt, faShield, faThumbsUp, faShieldAlt} from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
+import Team from '../components/team';
 
 const About= () => {
   
@@ -77,12 +80,16 @@ const About= () => {
                         as we strive to makes the exceptional positive impact you dream
                   </p>
 
+                  <Link href='/' >
                   <CustomButton
                     title='Book a consultation'
                     btnType='button'
                     containerStyles='rounded-full bg-white min-w-[150px] whitebutton'
                     icon={''}
                   />
+
+                  </Link>
+                  
                 </article>
 
           </div>
@@ -213,7 +220,7 @@ const About= () => {
                 <article className="contentContainer">
                   <ul className="grid grid-cols-1 md:grid-cols-2 strategy-list">
                     <li className="flex flex-row strategy">
-                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <FontAwesomeIcon className='mr-4' icon={faUsd}/> 
                     <div className='flex flex-col'>
                       <h4  className="  article-text  active-red">Cost / Efficiency</h4>
                       <p className="article-text"> 
@@ -233,7 +240,7 @@ const About= () => {
                     </div>
                     </li>
                     <li className="flex flex-row strategy">
-                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <FontAwesomeIcon className='mr-4' icon={faBolt}/> 
                     <div className='flex flex-col'>
                       <h4  className="  article-text  active-red">Speed / Timeliness</h4>
                       <p className="article-text">
@@ -243,7 +250,7 @@ const About= () => {
                     </div>
                     </li>
                     <li className="flex flex-row strategy">
-                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <FontAwesomeIcon className='mr-4' icon={faShieldAlt}/> 
                     <div className='flex flex-col'>
                       <h4  className="  article-text  active-red">Quality</h4>
                       <p className="article-text">We emphasize on conformity with the service 
@@ -252,7 +259,7 @@ const About= () => {
                     </div>
                     </li>
                     <li className="flex flex-row strategy">
-                    <FontAwesomeIcon className='mr-4' icon={faArrowCircleUp}/> 
+                    <FontAwesomeIcon className='mr-4' icon={faThumbsUp}/> 
                     <div className='flex flex-col'>
                       <h4  className="  article-text  active-red">Dependability</h4>
                       <p className="article-text">
@@ -268,7 +275,7 @@ const About= () => {
                     <span className='highlight'>{" "}of clients’ resources</span> 
                     {" "}and effectiveness 
                     <span className='highlight'>{" "}in meeting clients’ expectations..</span> 
-                    <span className="active-red">.</span>
+                    <span className="active-red" id='listofteam'>.</span>
                     </h3>
                 
                   
@@ -278,55 +285,9 @@ const About= () => {
           </div>
         </section>
 
-        <section className="darkbg secondSection Team">
+        <Team />
 
-              <div className="contentSection flex-col">
-
-                    <header className="contentheader">
-                       
-
-                        <h3 className="lg-subheader ">
-                        Meet <span className='text-white'>The Team</span>
-                        </h3>
-                    </header>
-
-                    <article className="contentContainer">
-                        
-
-                        <div className="darkCards">
-
-                        <div className="darkcard dC1 bm">
-                          <FontAwesomeIcon className='teamicon' icon={faLinkedin}/>
-                           
-                           
-
-                          <p className="article-text">
-                           Mrs. Patience Ozokwor
-                          </p>
-                        </div>
-
-                        <div className="darkcard dC2 bm">
-                         
-                          <FontAwesomeIcon className='teamicon' icon={faLinkedin}/>
-                          
-
-                          <p className="article-text">
-                          Mr. Hillary Bukunda
-                          </p>
-                        </div>
-                        </div>
-
-                        
-
-                    </article>
-
-              </div>
-
-              
-        </section>
-
-
-        <section className='darkbg firstSection whiteSection Experience'>
+        <section className='firstSection whiteSection Experience'>
           <div className="contentSection">
 
                 <header className="contentheader">
@@ -404,36 +365,28 @@ const About= () => {
 
 <div className="contentSection flex-col">
 
-      <header className="contentheader">
+      <header className="contentheader" id='Clients'>
          
 
           <h3 className="lg-subheader ">
-          Meet <span className='text-white'>The Team</span>
+          What<span className='text-white'>{" "}Our Clients</span>{" "}Say
           </h3>
       </header>
 
       <article className="contentContainer">
           
 
-          <div className="darkCards">
+          <div className="darkCards w-full">
 
-          <div className="darkcard dC1 bm">
-            <FontAwesomeIcon className='teamicon' icon={faLinkedin}/>
-             
-             
+          
 
-            <p className="article-text">
-             Mrs. Patience Ozokwor
-            </p>
-          </div>
-
-          <div className="darkcard dC2 bm">
+          <div className="darkcard dC2 bm w-full">
            
-            <FontAwesomeIcon className='teamicon' icon={faLinkedin}/>
+           
             
 
             <p className="article-text">
-            Mr. Hillary Bukunda
+            Space For Various Reviews
             </p>
           </div>
           </div>
@@ -462,7 +415,7 @@ const About= () => {
         </div>
 
 
-        <section className='darkbg firstSection whiteSection pt-8'>
+        <section className=' firstSection whiteSection pt-8 NewsLetter'>
           <div className="contentSection flex-col">
 
                 <header className="contentheader">
@@ -473,14 +426,14 @@ const About= () => {
 
                 <article className="contentContainer">
 
-                    <h3 className="lg-subheader">
+                    <h3 className="lg-subheader newshead">
                         Get Financial Insights and Tips
                     </h3>
 
                     
                     <form className="newsletter-form">
                       <input type="email" name="email" placeholder="Enter your email ...." required />
-                      <button type="submit" className="rounded-full bg-white min-w-[150px] whitebutton">
+                      <button type="submit" className="">
                         Stay Updated
                       </button>
                     </form> 
