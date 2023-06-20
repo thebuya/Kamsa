@@ -1,3 +1,4 @@
+//app/types/index.tsx
 import { MouseEventHandler } from "react";
 
 export interface CustomButtonProps{

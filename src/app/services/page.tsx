@@ -1,9 +1,10 @@
-
-import React from 'react';
+//app/services/pages.tsx
+'use client';
+import React, { useState } from 'react';
 import ServicesRender from '../components/ServicesRender';
 
-
 const Services = () => {
+  const [selectedService, setSelectedService] = useState('');
 
 
   return (
@@ -18,12 +19,13 @@ const Services = () => {
       </header>
 
 
-      <section className="section-container services-section">
+
 
       
-    <ServicesRender/>
-
-      </section>
+    <ServicesRender
+      selectedService={selectedService}
+      setSelectedService={setSelectedService}
+    />
 
 
     </main>

@@ -187,7 +187,7 @@ const ServicesRender = ({ selectedService, setSelectedService }: SearchServicesP
 
     
   return (
-    <>
+    <section className="section-container services-section">
               <aside className='services-search'>
           <Listbox value={selectedService} onChange={setSelectedService}>
             <div className="relative w-full">
@@ -289,7 +289,7 @@ const ServicesRender = ({ selectedService, setSelectedService }: SearchServicesP
 
 
 
-    </>
+    </section>
   )
 }
 
