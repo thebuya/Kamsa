@@ -1,11 +1,12 @@
 "use client";
 
+import { SearchServicesProps } from '../types';
 import React, { useState, useEffect, Fragment } from 'react';
 import { Listbox, Transition } from '@headlessui/react'
 import { services } from '../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { SearchServicesProps } from '../types/types';
+
 
 const Services = ({ selectedService, setSelectedService }: SearchServicesProps) => {
   const [selectedServiceId, setSelectedServiceId] = useState(0);
