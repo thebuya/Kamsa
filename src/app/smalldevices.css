@@ -36,6 +36,7 @@
     .contentSection header br{
         display: none;
     }
+    .contentSection .contentContainer a,
     .contentSection .whitebutton {
         width: -webkit-fill-available;
         }
@@ -64,6 +65,15 @@
 
 }
 
+@media screen and (max-width: 760px) {
+    .sm-unseen{
+        display: none;
+    }
+    .navbar .custom-btn{
+        border-radius: 0px;
+        padding: 0.85rem 1.5rem;
+      }
+}
 @media screen and (max-width: 720px) {
     .contentSection .lg-subheader {
         font-size: 32px;
@@ -85,7 +95,7 @@
         padding-top: 0;
      }
     .about-container .floatingdiv {
-        height: 120px;
+        height: 150px;
         }
     .about-container .floatingdiv span p {
         font-size: 1.75rem;
@@ -109,6 +119,12 @@
     .secondSection .darkCards .darkcard.dC1{
         margin-bottom: 0rem;
     }
+    .secondSection.mission .darkCards .darkcard.dC1{
+        margin-bottom: 1rem;
+    }
+    .secondSection.mission .darkCards .darkcard.dC2{
+        margin-top: 1rem;
+    }
     .secondSection .darkCards .darkcard.dC2{
         margin-top: 0rem;
     }
@@ -119,15 +135,14 @@
         font-size: 60px;
         padding: 2rem 2rem 3rem 2rem;
     }
-    .sm-unseen{
-        display: none;
-    }
+  
     .quote{
         font-size: 12px;
     }
     .contentSection .numbered-title{
         padding-bottom: 0.25rem;
     }
+   
     .navbar ul  {
         flex-direction: column;
         align-items: baseline;
@@ -229,6 +244,11 @@
 
 
 
+@media screen and (max-width: 612px) {
+    .smx-unseen{
+        display: none;
+    }
+}
 @media screen and (max-width: 600px) {
     .upfooter{
         display: flex;
@@ -269,9 +289,7 @@
               
             }
 @media screen and (max-width: 565px) {
-    .smx-unseen{
-        display: none;
-    }
+  
     .kamsa-container .NewsLetter .contentSection header.contentheader {
         margin-top: 0;
    }
@@ -291,7 +309,7 @@
         font-weight: 800;
         }
         .about-container .floatingdiv {
-            height: 120px;
+            height: 130px;
             }
            .floatingdiv .marquee--inner {
                 display: flex;

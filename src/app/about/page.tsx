@@ -95,7 +95,7 @@ const About= () => {
           </div>
         </section>
 
-        <section className="darkbg secondSection">
+        <section className="darkbg secondSection mission">
 
               <div className="contentSection">
 

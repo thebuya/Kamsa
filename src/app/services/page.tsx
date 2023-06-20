@@ -1,5 +1,6 @@
 //app/services/pages.tsx
 'use client';
+
 import React, { useState } from 'react';
 import ServicesRender from '../components/ServicesRender';
 
@@ -17,16 +18,11 @@ const Services = () => {
           </span>.
         </h1>
       </header>
-
-
-
-
       
     <ServicesRender
       selectedService={selectedService}
       setSelectedService={setSelectedService}
     />
-
 
     </main>
   )
